@@ -22,8 +22,8 @@ while True:
                 time.sleep(5)
         elif choix == 2:
             with open("liste.json", "a") as f:
-                ajouter = input("Quel élément souhaitez-vous ajouter : ")
-                ajouter = ajouter + ", "
+                ajouter = input("Quel élément souhaitez-vous ajouter : ")  
                 json.dump(ajouter, f)
+                f.write(", ")
                 print(f"L'élément {ajouter} a bien été ajouté à la liste de course")
                 time.sleep(3)
