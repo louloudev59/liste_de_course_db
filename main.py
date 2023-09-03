@@ -7,7 +7,6 @@
 # si aucune des conditions respectés, on demande de rechoisir
 import time
 import json
-import sys
 
 while True:
     choix = int(input("Bienvenue dans votre liste de course. Merci de choisir parmi les 5 options suivantes laquelle voulez-vous exécuter :\n 1 : Afficher la liste de course\n 2 : Ajouter un élément dans la liste de course\n 3 : supprimer un élément dans la liste de course\n 4 : Vider les éléments de la liste de courses\n 5 : Quitter le programme\n Votre choix : "))
