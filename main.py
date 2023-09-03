@@ -24,6 +24,6 @@ while True:
             with open("liste.json", "a") as f:
                 ajouter = input("Quel élément souhaitez-vous ajouter : ")  
                 json.dump(ajouter, f)
-                f.write(", ")
+                f.write(",\n")
                 print(f"L'élément {ajouter} a bien été ajouté à la liste de course")
                 time.sleep(3)
