@@ -8,6 +8,7 @@
 import time
 import json
 
+
 while True:
     choix = int(input("Bienvenue dans votre liste de course. Merci de choisir parmi les 5 options suivantes laquelle voulez-vous exécuter :\n 1 : Afficher la liste de course\n 2 : Ajouter un élément dans la liste de course\n 3 : supprimer un élément dans la liste de course\n 4 : Vider les éléments de la liste de courses\n 5 : Quitter le programme\n Votre choix : "))
     if choix < 1 or choix > 5:
@@ -22,6 +23,7 @@ while True:
         elif choix == 2:
             with open("liste.json", "a") as f:
                 ajouter = input("Quel élément souhaitez-vous ajouter : ")
+                ajouter = ajouter + ", "
                 json.dump(ajouter, f)
                 print(f"L'élément {ajouter} a bien été ajouté à la liste de course")
                 time.sleep(3)
